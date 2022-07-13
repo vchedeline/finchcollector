@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>K-Dramas List</h1>
+
+{% for kdrama in kdramas%}
+<div class='card'>
+  <div class='card-content'>
+    <span class='card-title'>{{ kdrama.title}}</span>
+    <p>Year: {{kdrama.year}}</p>
+    <p>Genre: {{kdrama.genre}}</p>
+    <p>Description: {{kdrama.description}}</p>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}
