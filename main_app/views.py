@@ -1,8 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views.generic.edit import CreateView
 from .models import Kdrama
 
 # Create your views here.
+class KdramaCreate(CreateView):
+  model = Kdrama
+  fields = '__all__'
+
 def home(request):
  return render(request, 'home.html')
 
