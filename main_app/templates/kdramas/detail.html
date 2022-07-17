@@ -17,6 +17,40 @@
       </div>
     </div>
   </div>
+  <div class="col s6">
+    <form action="{% url 'add_watching' kdrama.id %}" method="post">
+      {% csrf_token%} {{ watching_form.as_p}}
+      <input type="submit" value="Add Watch Party" class="btn" />
+    </form>
+    <br />
+    {% if kdrama.watched_episode_today %}
+    <div class="card-panel teal-text center-align">
+      Don't Stop Now! Binge Watch All of {{ kdrama.title }}
+    </div>
+    {% else %}
+    <div class="card-panel red-text center-align">
+      Oh No! You didn't watch {{kdrama.title}} Today!
+    </div>
+    {% endif %}
+    <table class="striped">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Number of Episodes Watched</th>
+          <th>Star Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for watching in kdrama.watching_set.all %}
+        <tr>
+          <td>{{watching.date}}</td>
+          <td>{{watching.episodes}}</td>
+          <td>{{watching.get_stars_display}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 </div>
 <div class="row">
   <div class="col s6">
@@ -50,5 +84,18 @@
     {% endif %}
   </div>
 </div>
+<script>
+  // create a datepicker
+  var dateEl = document.getElementById("id_date");
+  M.Datepicker.init(dateEl, {
+    format: "yyyy-mm-dd",
+    defaultDate: new Date(),
+    setDefaultDate: true,
+    autoClose: true,
+  });
 
+  // initialize the meal select
+  var selectEl = document.getElementById("id_stars");
+  M.FormSelect.init(selectEl);
+</script>
 {% endblock %}

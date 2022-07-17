@@ -2,11 +2,11 @@ from django.shortcuts import redirect, render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import ListView, DetailView
 from .models import Kdrama, Award
-
+from .forms import WatchingForm
 # Create your views here.
 class KdramaCreate(CreateView):
   model = Kdrama
-  fields = '__all__'
+  fields = ['title', 'year', 'genre', 'description']
 
 class KdramaUpdate(UpdateView):
   model = Kdrama
@@ -29,7 +29,16 @@ def kdramas_index(request):
 def kdrama_detail(request, kdrama_id):
   kdrama = Kdrama.objects.get(id=kdrama_id)
   undeserved_awards = Award.objects.exclude(id__in = kdrama.awards.all().values_list('id'))
-  return render(request, 'kdramas/detail.html', {'kdrama': kdrama, 'awards': undeserved_awards})
+  watching_form = WatchingForm()
+  return render(request, 'kdramas/detail.html', {'kdrama': kdrama, 'awards': undeserved_awards, 'watching_form': watching_form})
+
+def add_watching(request, kdrama_id):
+  form = WatchingForm(request.POST)
+  if form.is_valid():
+    new_watching = form.save(commit=False)
+    new_watching.kdrama_id = kdrama_id
+    new_watching.save()
+  return redirect('detail', kdrama_id=kdrama_id)
 
 def assoc_award(request, kdrama_id, award_id):
   Kdrama.objects.get(id=kdrama_id).awards.add(award_id)

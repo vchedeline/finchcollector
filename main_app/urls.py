@@ -9,6 +9,7 @@ urlpatterns = [
   path('kdramas/create/', views.KdramaCreate.as_view(), name='kdrama_create'),
   path('kdramas/<int:pk>/update/', views.KdramaUpdate.as_view(), name='kdrama_update'),
   path('kdramas/<int:pk>/delete/', views.KdramaDelete.as_view(), name='kdrama_delete'),
+  path('kdramas/<int:kdrama_id>/add_watching/', views.add_watching, name='add_watching'),
   path('kdramas/<int:kdrama_id>/assoc_award/<int:award_id>/', views.assoc_award, name='assoc_award'),
   path('awards/', views.AwardList.as_view(), name='awards_index'),
   path('awards/<int:pk>/', views.AwardDetail.as_view(), name='award_detail'),
