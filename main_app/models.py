@@ -12,4 +12,4 @@ class Kdrama(models.Model):
     return self.title
 
   def get_absolute_url(self):
-    return reverse('detail', kwargs={'kdrama_id': self.id})
+    return reverse('detail', kwargs={'kdrama_id': self.id},)

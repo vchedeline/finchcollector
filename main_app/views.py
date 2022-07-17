@@ -1,11 +1,19 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Kdrama
 
 # Create your views here.
 class KdramaCreate(CreateView):
   model = Kdrama
   fields = '__all__'
+
+class KdramaUpdate(UpdateView):
+  model = Kdrama
+  fields = ['title', 'year', 'genre', 'description']
+
+class KdramaDelete(DeleteView):
+  model = Kdrama
+  success_url = '/kdramas/'
 
 def home(request):
  return render(request, 'home.html')

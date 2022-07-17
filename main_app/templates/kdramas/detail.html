@@ -9,6 +9,10 @@
     <p>Genre: {{ kdrama.genre }}</p>
     <p>Description: {{ kdrama.description }}</p>
   </div>
+  <div class="card-action">
+    <a href="{% url 'kdrama_update' kdrama.id %}">Edit</a>
+    <a href="{% url 'kdrama_delete' kdrama.id %}">Delete</a>
+  </div>
 </div>
 
 {% endblock %}
