@@ -17,6 +17,16 @@
       href="{% static 'css/style.css' %}"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var instance = M.Carousel.init({
+        fullWidth: true,
+      });
+    </script>
   </head>
   <body>
     <header class="navbar-fixed">
@@ -45,9 +55,9 @@
     </header>
     <main class="container">{% block content %} {% endblock %}</main>
     <footer class="page-footer">
-      {% if user.is_authentocated%}
-      <div class="left">{{user.name}} is Logged In</div>
-      {% endif %}
+      {% if user.is_authenticated %}
+      <div class="left">User {{user.username | capfirst}} Now In Session</div>
+      {% else %} {% endif %}
       <div class="right">
         All Rights Reserved, &copy; 2022 Finch Collector &nbsp;
       </div>
