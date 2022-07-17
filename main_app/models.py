@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from datetime import date
+from django.contrib.auth.models import User
 
 STARS = (
   ('5', 'Five Stars'),
@@ -27,6 +28,7 @@ class Kdrama(models.Model):
   genre = models.CharField(max_length=100)
   description = models.TextField(max_length=250)
   awards = models.ManyToManyField(Award)
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
     return self.title
