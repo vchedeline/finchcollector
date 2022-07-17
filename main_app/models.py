@@ -38,7 +38,7 @@ class Kdrama(models.Model):
     return self.watching_set.filter(date=date.today()).count() >= 1
 
 class Watching(models.Model):
-  date = models.DateField('Watch Date')
+  date = models.DateTimeField('Watch Date')
   episodes = models.PositiveSmallIntegerField('Episodes Watched')
   stars = models.CharField(max_length=1, choices=STARS, default=STARS[0][0])
   kdrama = models.ForeignKey(Kdrama, on_delete=models.CASCADE)
@@ -48,3 +48,10 @@ class Watching(models.Model):
 
   class Meta:
     ordering = ['-date']
+
+class Photo(models.Model):
+  url = models.CharField(max_length=200)
+  kdrama = models.ForeignKey(Kdrama, on_delete=models.CASCADE)
+
+  def __str__(self):
+    return f'Photo for kdrama_id: {self.kdrama_id} @{self.url}'
