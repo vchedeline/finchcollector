@@ -4,11 +4,11 @@ from datetime import date
 from django.contrib.auth.models import User
 
 STARS = (
-  ('5', 'Five Stars'),
-  ('4', 'Four Stars'),
-  ('3', 'Three Stars'),
-  ('2', 'Two Stars'),
-  ('1', 'One Stars')
+  ('5', '✯✯✯✯✯'),
+  ('4', '✯✯✯✯'),
+  ('3', '✯✯✯'),
+  ('2', '✯✯'),
+  ('1', '✯')
 )
 
 # Create your models here.

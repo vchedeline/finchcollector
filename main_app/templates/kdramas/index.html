@@ -2,15 +2,18 @@
 
 <h1>K-Dramas List</h1>
 
-{% for kdrama in kdramas%}
-<div class="card">
-  <a href="{% url 'detail' kdrama.id %}">
-    <div class="card-content">
-      <span class="card-title">{{ kdrama.title}}</span>
-      <p>Year: {{kdrama.year}}</p>
-      <p>Genre: {{kdrama.genre}}</p>
-      <p>Description: {{kdrama.description}}</p>
-    </div>
-  </a>
+<div class="index">
+  {% for kdrama in kdramas%}
+  <div class="card">
+    <a href="{% url 'detail' kdrama.id %}">
+      <div class="card-content">
+        <span class="card-title" id="card-title">{{ kdrama.title}}</span>
+        <p>Year: {{kdrama.year}}</p>
+        <p>Genre: {{kdrama.genre}}</p>
+        <p>Description: {{kdrama.description}}</p>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
 </div>
-{% endfor %} {% endblock %}
+{% endblock %}

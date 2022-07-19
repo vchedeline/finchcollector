@@ -12,8 +12,16 @@
         <p>Description: {{ kdrama.description }}</p>
       </div>
       <div class="card-action">
-        <a href="{% url 'kdrama_update' kdrama.id %}">Edit</a>
-        <a href="{% url 'kdrama_delete' kdrama.id %}">Delete</a>
+        <a
+          class="pink-text text-accent-1"
+          href="{% url 'kdrama_update' kdrama.id %}"
+          >Edit</a
+        >
+        <a
+          class="pink-text text-accent-1"
+          href="{% url 'kdrama_delete' kdrama.id %}"
+          >Delete</a
+        >
       </div>
     </div>
     {% for photo in kdrama.photo_set.all %}
@@ -23,7 +31,9 @@
       alt="actor image"
     />
     {% empty %}
-    <div class="card-panel teal-text center-align">No Photos Uploaded</div>
+    <div class="card-panel pink-text text-accent-1 center-align">
+      No Actor Photos Uploaded
+    </div>
     {% endfor %}
 
     <form
@@ -33,9 +43,9 @@
       class="card-panel"
     >
       {% csrf_token %}
-      <input type="file" name="photo-file" />
+      <input class="pink accent-1" type="file" name="photo-file" />
       <br /><br />
-      <input type="submit" class="btn" value="Upload Photo" />
+      <input type="submit" class="btn" value="Upload Actor" />
     </form>
   </div>
   <div class="col s6">
@@ -45,11 +55,11 @@
     </form>
     <br />
     {% if kdrama.watched_episode_today %}
-    <div class="card-panel teal-text center-align">
+    <div class="card-panel pink-text center-align">
       Don't Stop Now! Binge Watch All of {{ kdrama.title }}
     </div>
     {% else %}
-    <div class="card-panel red-text center-align">
+    <div class="card-panel black-text center-align">
       Oh No! You didn't watch {{kdrama.title}} Today!
     </div>
     {% endif %}
