@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-<a href="#about-k-dramafever">About K-DramaFever</a> | <a href="#user-stories">User Stories</a> | <a href="#route-tables">Route Tables</a> | <a href="#future-updatesenhancements">Future Updates/Enhancements</a> | <a href="#technology-used">Technology Used</a> | <a href="#live-site-preview">Live Site Preview</a>
+<a href="#fire-about-k-dramafever">About K-DramaFever</a> | <a href="#user-stories">User Stories</a> | <a href="#route-tables">Route Tables</a> | <a href="#-future-updatesenhancements">Future Updates/Enhancements</a> | <a href="#-technology-used">Technology Used</a> | <a href="#-live-site-preview">Live Site Preview</a>
 </p>
 
 **Summary**
@@ -21,7 +21,7 @@
 | Description |Central location for your K-Drama guilty pleasures |
 | Developer | [Chedeline Viljean](#-contact)|
 
-## About K-DramaFever
+## :fire: About K-DramaFever
 
 Delve into that feverish dream where all your beloved Korean shows come alive!
 Add your all time favorites, and your future favorites and keep track of them all in one place!
@@ -46,6 +46,11 @@ Add your all time favorites, and your future favorites and keep track of them al
 | /accounts | Link to login, logout, signup |                                                                                                            |
 | /admin    | Admin access for superuser    |                                                                                                            |
 
+## 🚀 Future Updates/Enhancements
+
+- [ ] Ability to edit/delete viewing days
+- [ ] Ability to comment
+
 ## 🖥 Technology Used
 
 - Python
@@ -55,11 +60,6 @@ Add your all time favorites, and your future favorites and keep track of them al
 - Heroku
 - Imgur
 - Github
-
-## 🚀 Future Updates/Enhancements
-
-- [ ] Ability to edit/delete viewing days
-- [ ] Ability to comment
 
 ## 👀 Live Site Preview
 
