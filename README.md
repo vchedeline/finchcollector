@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<img align="center" src="https://i.imgur.com/umsOeaV.png" width="300">
+<img align="center" src="https://i.imgur.com/umsOeaV.png" width="400">
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 |-------|--------|
 | Project Name | K-DramaFever of Finch Collecter|
 | Description |Central location for your K-Drama guilty pleasures |
-| Developer | Chedeline Viljean|
+| Developer | [Chedeline Viljean](#%F0%9F%93%AB-contact)|
 
 ## About K-DramaFever
 
@@ -46,7 +46,7 @@ Add your all time favorites, and your future favorites and keep track of them al
 | /accounts | Link to login, logout, signup |                                                                                                            |
 | /admin    | Admin access for superuser    |                                                                                                            |
 
-## Technology Used
+## 🖥 Technology Used
 
 - Python
 - Django
@@ -56,20 +56,28 @@ Add your all time favorites, and your future favorites and keep track of them al
 - Imgur
 - Github
 
-## Future Updates/Enhancements
+## 🚀 Future Updates/Enhancements
 
 - [ ] Ability to edit/delete viewing days
 - [ ] Ability to comment
 
-## Live Site Preview
+## 👀 Live Site Preview
 
-![Home Page](https://i.imgur.com/H2M4WxL.png)
-![Home Page 2](https://i.imgur.com/z64fNfx.png)
-![About Page](https://i.imgur.com/umESLD0.png)
-![Awards Page](https://i.imgur.com/LaZOe2v.png)
-![K-Dramas Page](https://i.imgur.com/yfRgF9k.png)
-![K-Drama 1 Page](https://i.imgur.com/sAXY9MN.png)
-![K-Drama 1 Page 2](https://i.imgur.com/kEL2CX7.png)
-![K-Drama 2 Page](https://i.imgur.com/DY3Qa7E.png)
+![Home Page](https://i.imgur.com/H2M4WxL.png "Home Page Preview")
+![Home Page 2](https://i.imgur.com/z64fNfx.png "Home Page Preview")
+![About Page](https://i.imgur.com/umESLD0.png "About Page Preview")
+![Awards Page](https://i.imgur.com/LaZOe2v.png "Awards Page Preview")
+![K-Dramas Page](https://i.imgur.com/yfRgF9k.png "Index Page Preview")
+![K-Drama 1 Page](https://i.imgur.com/sAXY9MN.png "Show Page Preview")
+![K-Drama 1 Page 2](https://i.imgur.com/kEL2CX7.png "Show Page Preview")
+![K-Drama 2 Page](https://i.imgur.com/DY3Qa7E.png "Show Page Preview")
 
-<p align="right">(<a href="#start">Back To Top</a>)</p>
+## 📫 Contact
+
+> [GitHub][github] | [LinkedIn][linkedin] | Slack: @Chedeline Viljean
+
+<p align="right">(<a href="#start">Top ⬆</a>)</p>
+
+[github]: https://github.com/vchedeline
+[linkedin]: https://www.linkedin.com/in/chedelineviljean/
+[slack]: ""
