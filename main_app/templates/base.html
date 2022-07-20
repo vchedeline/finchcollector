@@ -57,7 +57,9 @@
     <footer class="page-footer">
       {% if user.is_authenticated %}
       <div class="left">User {{user.username | capfirst}} Now In Session</div>
-      {% else %} {% endif %}
+      {% else %}
+      <div class="left">Log In or Sign Up to Enjoy K-DramaFever!</div>
+      {% endif %}
       <div class="right">
         All Rights Reserved, &copy; 2022 K-DramaFever &nbsp;
       </div>
