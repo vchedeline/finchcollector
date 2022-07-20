@@ -7,6 +7,10 @@
 </p>
 
 <p align="center">
+<img align="center" src="https://i.imgur.com/umsOeaV.png" width="300">
+</p>
+
+<p align="center">
 <a href="#about-k-dramafever">About K-DramaFever</a> | <a href="#user-stories">User Stories</a> | <a href="#route-tables">Route Tables</a> | <a href="#future-updatesenhancements">Future Updates/Enhancements</a> | <a href="#technology-used">Technology Used</a> | <a href="#live-site-preview">Live Site Preview</a>
 </p>
 
@@ -68,4 +72,4 @@ Add your all time favorites, and your future favorites and keep track of them al
 ![K-Drama 1 Page 2](https://i.imgur.com/kEL2CX7.png)
 ![K-Drama 2 Page](https://i.imgur.com/DY3Qa7E.png)
 
-<p align="right">(<a href="#k-dramafever">Back To Top</a>)</p>
+<p align="right">(<a href="#start">Back To Top</a>)</p>
