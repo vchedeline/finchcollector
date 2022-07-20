@@ -6,21 +6,16 @@
   <a href="https://github.com/vchedeline/finchcollector">Git Hub Repo</a>
 </p>
 
+<p align="center">
+<a href="#about-k-dramafever">About K-DramaFever</a> | <a href="#user-stories">User Stories</a> | <a href="#route-tables">Route Tables</a> | <a href="#future-updatesenhancements">Future Updates/Enhancements</a> | <a href="#technology-used">Technology Used</a> | <a href="#live-site-preview">Live Site Preview</a>
+</p>
+
 **Summary**
 | Field | Detail |
 |-------|--------|
 | Project Name | K-DramaFever of Finch Collecter|
 | Description |Central location for your K-Drama guilty pleasures |
 | Developer | Chedeline Viljean|
-
-### Table of Contents
-
-1. [About K-DramaFever](#about-k-dramafever)
-2. [User Stories](#user-stories)
-3. [Route Tables](#route-tables)
-4. [Future Updates/Enhancements](#future-updatesenhancements)
-5. [Technology Used](#technology-used)
-6. [Live Site Preview](#live-site-preview)
 
 ## About K-DramaFever
 
