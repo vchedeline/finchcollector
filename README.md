@@ -19,7 +19,7 @@
 |-------|--------|
 | Project Name | K-DramaFever of Finch Collecter|
 | Description |Central location for your K-Drama guilty pleasures |
-| Developer | [Chedeline Viljean](#%F0%9F%93%AB-contact)|
+| Developer | [Chedeline Viljean](#-contact)|
 
 ## About K-DramaFever
 
