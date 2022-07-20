@@ -6,11 +6,11 @@
   <div class="col s6 col-offset-3">
     <div class="card">
       <div class="card-content">
-        <span class="card-title"
+        <span class="card-title" id="card-title"
           >{{ award.adjective }} {{ award.category }}</span
         >
       </div>
-      <div class="card-action">
+      <div class="card-action" id="card-action">
         <a href="{% url 'award_update' award.id %}">Edit</a>
         <a href="{% url 'award_delete' award.id %}">Delete</a>
       </div>

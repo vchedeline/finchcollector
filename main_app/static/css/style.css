@@ -33,15 +33,11 @@ main {
   color: white;
 }
 
-.index {
-  display: grid;
-  grid-template-rows: repeat(3, 30%);
-}
-
-.index .card {
-  margin: 2%;
-  display: flex;
-  align-items: center;
+h1,
+h3 {
+  font-family: var(--title-font);
+  font-weight: 800;
+  text-shadow: 3px 3px 10px var(--pop-color);
 }
 
 form {
@@ -49,33 +45,43 @@ form {
   border: 2px solid white;
 }
 
-h1 {
+table {
+  font-family: var(--content-font);
+}
+
+label {
+  color: var(--content-text);
+  font-size: x-large;
+}
+
+form input,
+table input,
+td,
+input[type="number"]:not(.browser-default),
+input[type="text"]:not(.browser-default) {
+  color: var(--content-text);
+  font-family: var(--content-font);
+  font-size: x-large;
+}
+
+textarea {
+  color: var(--content-text);
+  font-family: var(--content-font);
+}
+
+footer {
+  padding-top: 0;
+  text-align: right;
   font-family: var(--title-font);
-  font-weight: 800;
-  text-shadow: 3px 3px 10px var(--pop-color);
 }
 
 #card-title {
   font-size: 35px;
 }
 
-.card {
-  background-color: var(--div-background);
-  border: 6px solid var(--card-border);
-  font-family: var(--content-font);
-  font-size: var(--content-size);
-}
-
-.card-content {
-  color: var(--content-text);
-}
-
-.card-action form {
-  background-color: var(--div-background);
-  border: none;
-}
-.main-wrapper {
-  background-color: var(--div-background);
+#card-action a {
+  text-decoration: none;
+  color: var(--pop-color);
 }
 
 #about {
@@ -95,15 +101,75 @@ h1 {
   width: 50%;
   border: 5px solid white;
 }
+
+.dropdown-content,
+.select-dropdown li span,
+.confirmation-btns button {
+  color: var(--content-text);
+}
+
+.datepicker-date-display,
+.is-today button {
+  background-color: var(--pop-color);
+}
+
+.striped thead {
+  background-color: var(--div-background);
+  color: var(--content-text);
+  font-size: var(--content-size);
+}
+.index {
+  display: grid;
+  grid-template-rows: repeat(3, 30%);
+}
+
+.index .card {
+  margin: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--div-background);
+  border: 6px solid var(--card-border);
+  font-family: var(--content-font);
+  font-size: var(--content-size);
+}
+
+.card-content {
+  color: var(--content-text);
+}
+
+.card-action form {
+  background-color: var(--div-background);
+  border: none;
+}
+
+.main-wrapper {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--div-background);
+}
+
+.main-wrapper a {
+  font-family: var(--content-text);
+  font-size: 2em;
+  color: var(--content-text);
+  text-shadow: 4px 4px 3px var(--pop-color);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.main-wrapper a:hover {
+  font-size: 2.5em;
+}
+
 .btn {
   background-color: var(--pop-color);
   color: white;
-}
-
-footer {
-  padding-top: 0;
-  text-align: right;
-  font-family: var(--title-font);
 }
 
 .page-footer {
