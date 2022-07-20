@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://cv-sei-222-finchcollector.herokuapp.com/ ">Live Site</a>
   ::
-  <a href=" https://github.com/vchedeline/finchcollector">Git Hub Repo</a>
+  <a href="https://github.com/vchedeline/finchcollector">Git Hub Repo</a>
 </p>
 
 **Summary**
