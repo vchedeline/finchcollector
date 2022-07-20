@@ -1,14 +1,28 @@
+<h1 align="center">K-DramaFever</h1>
+
+<p align="center">
+  <a href="https://cv-sei-222-finchcollector.herokuapp.com/ ">Live Site</a>
+  ::
+  <a href=" https://github.com/vchedeline/finchcollector">Git Hub Repo</a>
+</p>
+
 **Summary**
 | Field | Detail |
 |-------|--------|
 | Project Name | K-DramaFever of Finch Collecter|
 | Description |Central location for your K-Drama guilty pleasures |
 | Developer | Chedeline Viljean|
-| Live Website | https://cv-sei-222-finchcollector.herokuapp.com/ |
-| Repo | https://github.com/vchedeline/finchcollector |
-| Technologies | Python, Django, HTML,CSS, JavaScript, Heroku, Imgur, Github |
 
-## Problem Being Solved and Target Market
+### Table of Contents
+
+1. [About K-DramaFever](#about-k-dramafever)
+2. [User Stories](#user-stories)
+3. [Route Tables](#route-tables)
+4. [Future Updates/Enhancements](#future-updatesenhancements)
+5. [Technology Used](#technology-used)
+6. [Live Site Preview](#live-site-preview)
+
+## About K-DramaFever
 
 Delve into that feverish dream where all your beloved Korean shows come alive!
 Add your all time favorites, and your future favorites and keep track of them all in one place!
@@ -25,15 +39,30 @@ Add your all time favorites, and your future favorites and keep track of them al
 
 ## Route Tables
 
-| Endpoint  | Response                       | Other                                                                                                      |
-| --------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| /about/   | About section for the weebsite |                                                                                                            |
-| /kdramas/ | Displays all of K-Dramas       | id/, id/update, id/delete, id/add_watching, id/add_photo, id/assoc_award/id, id/disassoc_award/id, create/ |
-| /awards   | Displays all Awards            | id/, id/update, id/delete, create/                                                                         |
-| /accounts | Link to login, logout, signup  |                                                                                                            |
-| /admin    | Admin access for superuser     |                                                                                                            |
+| Endpoint  | Response                      | Other                                                                                                      |
+| --------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| /about/   | About section for the website |                                                                                                            |
+| /kdramas/ | Displays all of K-Dramas      | id/, id/update, id/delete, id/add_watching, id/add_photo, id/assoc_award/id, id/disassoc_award/id, create/ |
+| /awards   | Displays all Awards           | id/, id/update, id/delete, create/                                                                         |
+| /accounts | Link to login, logout, signup |                                                                                                            |
+| /admin    | Admin access for superuser    |                                                                                                            |
 
-## Live Site
+## Technology Used
+
+- Python
+- Django
+- HTML/CSS
+- JavaScript
+- Heroku
+- Imgur
+- Github
+
+## Future Updates/Enhancements
+
+- [ ] Ability to edit/delete viewing days
+- [ ] Ability to comment
+
+## Live Site Preview
 
 ![Home Page](https://i.imgur.com/H2M4WxL.png)
 ![Home Page 2](https://i.imgur.com/z64fNfx.png)
