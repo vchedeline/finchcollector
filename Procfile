@@ -1,1 +1,3 @@
-web: gunicorn finchcollector.wsgi
+web: gunicorn finchcollector.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
